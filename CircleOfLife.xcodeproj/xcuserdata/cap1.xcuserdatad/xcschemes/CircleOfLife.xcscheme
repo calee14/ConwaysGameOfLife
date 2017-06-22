@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B38930591EFC24F700C7CDDC"
+               BuildableName = "CircleOfLife.app"
+               BlueprintName = "CircleOfLife"
+               ReferencedContainer = "container:CircleOfLife.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B38930731EFC24F700C7CDDC"
+               BuildableName = "CircleOfLifeTests.xctest"
+               BlueprintName = "CircleOfLifeTests"
+               ReferencedContainer = "container:CircleOfLife.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B389307E1EFC24F700C7CDDC"
+               BuildableName = "CircleOfLifeUITests.xctest"
+               BlueprintName = "CircleOfLifeUITests"
+               ReferencedContainer = "container:CircleOfLife.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B38930591EFC24F700C7CDDC"
+            BuildableName = "CircleOfLife.app"
+            BlueprintName = "CircleOfLife"
+            ReferencedContainer = "container:CircleOfLife.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B38930591EFC24F700C7CDDC"
+            BuildableName = "CircleOfLife.app"
+            BlueprintName = "CircleOfLife"
+            ReferencedContainer = "container:CircleOfLife.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B38930591EFC24F700C7CDDC"
+            BuildableName = "CircleOfLife.app"
+            BlueprintName = "CircleOfLife"
+            ReferencedContainer = "container:CircleOfLife.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

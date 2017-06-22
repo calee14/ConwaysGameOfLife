@@ -17,6 +17,9 @@
 		B389306E1EFC24F700C7CDDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B389306C1EFC24F700C7CDDC /* LaunchScreen.storyboard */; };
 		B38930791EFC24F700C7CDDC /* CircleOfLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38930781EFC24F700C7CDDC /* CircleOfLifeTests.swift */; };
 		B38930841EFC24F700C7CDDC /* CircleOfLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38930831EFC24F700C7CDDC /* CircleOfLifeUITests.swift */; };
+		B38930921EFC26A000C7CDDC /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38930911EFC26A000C7CDDC /* MSButtonNode.swift */; };
+		B38930941EFC2C5600C7CDDC /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38930931EFC2C5600C7CDDC /* Grid.swift */; };
+		B38930961EFC2E1B00C7CDDC /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38930951EFC2E1B00C7CDDC /* Creature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		B389307F1EFC24F700C7CDDC /* CircleOfLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleOfLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38930831EFC24F700C7CDDC /* CircleOfLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleOfLifeUITests.swift; sourceTree = "<group>"; };
 		B38930851EFC24F700C7CDDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38930911EFC26A000C7CDDC /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		B38930931EFC2C5600C7CDDC /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		B38930951EFC2E1B00C7CDDC /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +117,10 @@
 				B38930671EFC24F700C7CDDC /* Main.storyboard */,
 				B389306A1EFC24F700C7CDDC /* Assets.xcassets */,
 				B389306C1EFC24F700C7CDDC /* LaunchScreen.storyboard */,
+				B38930911EFC26A000C7CDDC /* MSButtonNode.swift */,
 				B389306F1EFC24F700C7CDDC /* Info.plist */,
+				B38930931EFC2C5600C7CDDC /* Grid.swift */,
+				B38930951EFC2E1B00C7CDDC /* Creature.swift */,
 			);
 			path = CircleOfLife;
 			sourceTree = "<group>";
@@ -275,7 +284,10 @@
 			files = (
 				B38930641EFC24F700C7CDDC /* GameScene.swift in Sources */,
 				B38930661EFC24F700C7CDDC /* GameViewController.swift in Sources */,
+				B38930961EFC2E1B00C7CDDC /* Creature.swift in Sources */,
 				B389305E1EFC24F700C7CDDC /* AppDelegate.swift in Sources */,
+				B38930941EFC2C5600C7CDDC /* Grid.swift in Sources */,
+				B38930921EFC26A000C7CDDC /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +540,7 @@
 				B389308A1EFC24F700C7CDDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B389308B1EFC24F700C7CDDC /* Build configuration list for PBXNativeTarget "CircleOfLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +549,7 @@
 				B389308D1EFC24F700C7CDDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B389308E1EFC24F700C7CDDC /* Build configuration list for PBXNativeTarget "CircleOfLifeUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +558,7 @@
 				B38930901EFC24F700C7CDDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
