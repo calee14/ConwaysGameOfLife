@@ -56,8 +56,14 @@ class Grid: SKSpriteNode {
         //New Creature Object
         let creature = Creature()
         
-        let gridPosition = CGPoint(x: x*cellWidth, y: y*cellHeight)
-        creature.position = gridPosition
+        //Center the image in the center of the cell
+        let newPosition = CGPoint(x: cellWidth*x + (cellWidth - Int(creature.size.width))/2, y: cellHeight*y + (cellHeight - Int(creature.size.width))/2)
+        
+        print("yello\(creature.size.width)")
+        
+        //let gridPosition = CGPoint(x: x*cellWidth, y: y*cellHeight)
+        
+        creature.position = newPosition
         
         //Set creature's life status
         creature.isAlive = false
@@ -66,6 +72,7 @@ class Grid: SKSpriteNode {
         addChild(creature)
         
         //Add creature to grid Array
+        //Takes the empty-row array initialized in the for loop for gridX
         gridArray[x].append(creature)
         
         
@@ -78,6 +85,8 @@ class Grid: SKSpriteNode {
         for gridX in 0..<columns {
             
             //Intialize empty column 
+            //The initialized column is acts as a row so when accessed we would use an x-value
+            //And to access an item in the row we would the y-value - column :)
             gridArray.append([])
             
             //Loop through rows
@@ -104,13 +113,14 @@ class Grid: SKSpriteNode {
                 currentCreature.neighborCount = 0
                 
                 //Loop through all adjecent creatures to current creatures
-                //Loop though rows
+                //Loop though the objects to the left and right of the current creature
                 for innerGridX in (gridX - 1)...(gridX + 1) {
                     
                     //Ensure inner grid columns is inside the grid
                     if innerGridX < 0 || innerGridX >= columns { continue }
                     
                     //Loop through each object in the row
+                    //searchs all the objects in the row above, below, and currently on for neighbors left and right.
                     for innerGridY in (gridY - 1)...(gridY + 1) {
                         
                         //Ensure the inner grid row is inside the grid
